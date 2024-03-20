@@ -1,0 +1,57 @@
+/* NavBar styles */
+.navbar {
+    background-color: black; /*Dark navbar background color*/
+    color: white;
+    margin-bottom: 0px;
+}
+
+/*.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff !important;*/ /* White text color for brand and links */
+/*}*/
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    z-index: 1001; /* Set a higher z-index value than the content */
+}
+
+nav li {
+    margin-left: 10px;
+}
+
+    nav li a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s, transform 0.3s;
+    }
+
+        nav li a:hover,
+        nav li a:active,
+        nav li a:focus {
+            color: #228b22;
+            transform: scale(1.2);
+        }
+
+        nav li a:active,
+        nav li a:focus {
+            background-color: white;
+            color: #228b22;
+        }
+
+    /* Footer CSS*/
+footer {
+    background-color: black;  /*Dark navbar background color*/ 
+    color: white;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}

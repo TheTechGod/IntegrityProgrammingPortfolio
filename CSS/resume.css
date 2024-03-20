@@ -1,0 +1,57 @@
+/*  Resume Style*/
+.resumeHeadingSection {
+    text-align: center;
+}
+
+.resumeBody {
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-top: 0px;
+    padding-bottom: 35px;
+}
+
+.resumeSkillsContainer {
+    display: flex;
+    justify-content: space-between; /* Added to separate the lists */
+}
+
+.resumeSkillsList ul {
+        margin: 0;
+        padding: 15px;
+    }
+
+    .resumeSkillsList li {
+        margin-right: 10px;
+    }
+
+    a{
+        color: black;
+    }
+
+
+
+.resumeActivities {
+    display: flex;
+}
+
+.resumeImg {
+    height: 50px;
+}
+
+.resumeSkillsList {
+    display: flex;
+}
+
+.resumeActivities ul {
+    margin: 0;
+    padding: 15;
+}
+
+.resumeActivities li {
+    margin-right: 10px;
+}
+
+.resumeActivitiesSection {
+    padding-bottom: 30px;
+    
+}
