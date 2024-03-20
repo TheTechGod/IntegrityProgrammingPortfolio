@@ -1,0 +1,539 @@
+/* Resetting default CSS*/
+body {
+    font-family: "Arial", sans-serif;
+    background-color: green;
+    padding: 0;
+    margin: 0;
+}
+
+/* General CSS*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+}
+
+.brand h3 {
+    margin-left: 20px;
+}
+
+/*Title*/
+.greenColor {
+    color: green;
+}
+
+/* Sections CSS*/
+/* General section styles */
+.section {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*margin: 20px;*/
+    /*height: 100vh;*/
+    overflow: hidden;
+}
+
+/* Hover effect for styled-button */
+.styled-button:hover {
+    color: #45a049; /* Darker green on hover */
+    background-color: white;
+}
+
+    /* Home ID*/
+#home {
+    background-color: black;
+    color: white; /* Text color for the greeting */
+    padding: 40px; /* Add padding for better visibility */
+    margin-top: 0%;
+    height: 100vh; /* Set section height to viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    max-width: 80%; /* Limit content width for larger screens */
+}
+
+/* Additional styles for the home section */
+#home h1 {
+    margin-bottom: 20px; /* Adjust spacing */
+}
+
+    /*Projects section*/
+.project {
+    height: 100%;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.project {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+    .project img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the entire container */
+    }
+
+
+    .project:hover img {
+        transform: scale(1.1);
+    }
+
+    .project h3 {
+        margin-top: 10px;
+    }
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+    .project-link:hover {
+        background-color: #45a049;
+    }
+
+.project::before {
+    content: attr(data-description);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: left;
+    z-index: 1;
+}
+    /*Challenges section*/
+#challenges {
+    height: 100%;
+}
+
+.challenges-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.challenge-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.challenge {
+    width: 30%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+    .challenge img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s;
+    }
+
+    .challenge:hover img {
+        transform: scale(1.1);
+    }
+
+    .challenge h3 {
+        margin-top: 10px;
+    }
+
+    .challenge p {
+        margin-top: 10px;
+    }
+
+    /*Contact section*/
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group-item {
+    flex: 1;
+    margin-right: 10px;
+}
+/*Projects section*/
+.project {
+    height: 100%;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.project {
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+    .project img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image covers the entire container */
+    }
+
+
+    .project:hover img {
+        transform: scale(1.1);
+    }
+
+    .project h3 {
+        margin-top: 10px;
+    }
+
+.project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+    .project-link:hover {
+        background-color: #45a049;
+    }
+
+.project::before {
+    content: attr(data-description);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    text-align: left;
+    z-index: 1;
+}
+
+
+/*Challenges section*/
+#challenges {
+    height: 100%;
+}
+
+.challenges-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.challenge-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.challenge {
+    width: 30%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+    .challenge img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s;
+    }
+
+    .challenge:hover img {
+        transform: scale(1.1);
+    }
+
+    .challenge h3 {
+        margin-top: 10px;
+    }
+
+    .challenge p {
+        margin-top: 10px;
+    }
+
+    /*Contact section*/
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group-item {
+    flex: 1;
+    margin-right: 10px;
+}
+    /* Additional styles for the contact form */
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group-item {
+    flex: 1;
+    margin-right: 10px;
+}
+#home {
+    height: 100%;
+    padding: 40px;
+    text-align: center;
+}
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-category {
+    flex: 1;
+    margin: 0 10px;
+}
+/* Additional styles for the contact form */
+#contact {
+    height: 100%;
+}
+
+.label-div {
+    margin-top: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .label-group label {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+input,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.right-label {
+    margin-left: 177px;
+}
+
+.phonenumber-label {
+    margin-left: 214px;
+}
+
+.left-label {
+    margin-left: 30px;
+}
+
+input {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    button:hover {
+        background-color: white;
+    }
+
+#contact-message {
+    height: 150px; /* Adjust the height as needed */
+}
+
+#contact-subject,
+#contact-message {
+    width: 100%;
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+}
+
+/*About me section*/
+#about {
+    height: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+    .about-content img {
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+/* Skills section styles */
+#skills {
+    height: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+.skills-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-category {
+    flex: 1;
+    margin: 0 10px;
+}
+
+    .skill-category h3 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .skill-category ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .skill-category li {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 8px;
+        padding: 25px;
+    }
+    
+    /* Alternating Section Styles*/
+    .odd {
+        background-color: green;
+        color: black;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+    
+    .even {
+        background-color: whitesmoke;
+        color: black;
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+    
+    .odd h2{
+        color: whitesmoke;
+        text-align:center;
+    }
+    
+    .even h2 {
+        color: green;
+        text-align: center;
+    }
+
+/*Title*/
+.greenColor
+{
+    color: green;
+}
+
+.content {
+    max-width: 80%; /* Limit content width for larger screens */
+}
+
+.brand h3 {
+    margin-left: 20px;
+}
+
+/* Style for the dynamically created button */
+.styled-button {
+    background-color: #4caf50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+    margin: 0px;
+}
+
+/* Hover effect */
+.styled-button:hover {
+    color: #45a049; /* Darker green on hover */
+    background-color: white;
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoff Metzger's Resume</title>
+    <!--CSS Links-->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="fontAwesome.css">
+    <link rel="stylesheet" href="romanInteger.css">
+        <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-xxzFVnABCDfoIuArZr4ZZI2w96aUp5N9+5U5KdQXT12iFSp4iMA2zy/2+YcfIbbG" crossorigin="anonymous">
+
+    <!--JavaScript Links-->
+    <script src="site.js"></script>
+    <script src="RomanInteger.js"></script>
+        <!--Font Awesome JavaScript-->
+    <script src="https://kit.fontawesome.com/013b172746.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!--Font Awesome JS-->
+    <script src="https://kit.fontawesome.com/013b172746.js" crossorigin="anonymous"></script>
+        <!--Popper JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+    <!--header-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-toggleable-md border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <h1 class="navbar-brand"><b><u class="greenColor">I</u>ntegrity</b> <u class="greenColor"><b>P</u>rogramming</b> </h1>
+                <button class="navbar-toggler navbar-light" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-white">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="resume.html" class="nav-link text-white">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    </h3>
+    <div class="RomanToIntegerContainer">
+        <h1 class="RomanToIntegerHone">Roman Numeral Converter</h1>
+        <h3>Leet Code Challenge:</h3>
+        <h3><a href="https://leetcode.com/problems/roman-to-integer/description/" alt="link to the leet code challenge Roman to Integer">
+            <u></u>Given a roman numeral, convert it to an integer.</u>
+        </a></h3>
+        <label for="romanInput">Enter Roman Numeral: </label>
+        <input type="text" id="romanInput" placeholder="e.g., IV">
+        <br>
+        <button onclick="convertToInteger()" class="button">Convert</button>
+        <div class="result" id="result"></div>
+    </div>
+    
+    <script>
+        function convertToInteger() {
+            const romanInput = document.getElementById('romanInput').value.toUpperCase();
+            const result = romanToInt(romanInput);
+            document.getElementById('result').innerHTML = `Integer Value: ${result}`;
+        }
+    </script>
+    
+    <footer class="footer" id="footer" >
+        <h1 class="navbar-brand"><b><u class="greenColor">I</u>ntegrity</b> <u class="greenColor"><b>P</u>rogramming</b> </h1>
+    </footer> 
+</body>
+</html>

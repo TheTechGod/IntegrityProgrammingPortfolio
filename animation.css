@@ -1,0 +1,132 @@
+/* Scrolling text animation */
+.scroll-in {
+    opacity: 0;
+    white-space: nowrap; /* Prevent line breaks during animation */
+    color: white;
+}
+
+/* Placeholder for code styles */
+#code-placeholder {
+    padding-top: 100px;
+    color: white;
+    font-size: 16px;
+    display: inline-block; /* Ensure inline-block for letter-by-letter effect */
+}
+
+/* Background code animation */
+@keyframes codeAnimation {
+    0% {
+        background-position: 0 0;
+    }
+
+    25% {
+        background-position: 100% 0;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 0 100%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+    /* Placeholder for code styles */
+#code-placeholder {
+    padding-top: 100px;
+    color: white;
+    font-size: 16px;
+    display: inline-block; /* Ensure inline-block for letter-by-letter effect */
+}
+
+    /* Scrolling text animation */
+.scroll-in {
+    opacity: 0;
+    white-space: nowrap; /* Prevent line breaks during animation */
+    color: white;
+}
+
+    /* Secondary scrolling text animation */
+@keyframes scrollInSecondary {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+}
+
+.scroll-in-secondary {
+    animation: scrollInSecondary 3s ease-in-out forwards;
+}
+
+/* Main scrolling text animation */
+/* Add these keyframes for scroll in animation */
+@keyframes scrollInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scrollInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Keyframes for multicolor background code animation */
+@keyframes codeAnimation {
+    0% {
+        background-position: 0 0;
+    }
+
+    25% {
+        background-position: 100% 0;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 0 100%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
