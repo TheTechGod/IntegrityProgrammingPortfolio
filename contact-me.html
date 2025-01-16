@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geoff Metzger's Portfolio</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="swag1.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
-        /* Flexbox setup to keep the footer at the bottom */
+        /* Ensure footer stays at the bottom */
         body {
             display: flex;
             flex-direction: column;
@@ -15,7 +15,7 @@
         }
 
         .container {
-            flex: 1; /* Ensures the content grows to push footer to bottom */
+            flex: 1; /* Push footer to the bottom */
         }
 
         .footer {
@@ -44,32 +44,29 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about-me.html" style="color: #387C6D;">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact-me.html" style="color: #387C6D;">Contact</a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
     <div class="container mt-5">
-        <!-- Hero Section -->
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <div class="container fade-in">
-                    <h1 class="display-4">Hi, I'm Geoff Metzger</h1>
-                    <p class="lead">A developer specializing in <b>.NET</b>, <b>Java</b>, and <b>Python</b></p>
-                </div>
-                <div class="mt-4">
-                    <a href="projects.html" class="btn btn-primary btn-lg">Projects</a>
-                    <a href="contact-me.html" class="btn btn-primary btn-lg">Contact</a>
-                </div>
+        <h1 class="mb-4">Contact Me</h1>
+        <!-- Form -->
+        <form asp-action="Index" method="post" novalidate>
+            <div class="mb-3">
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" id="Name" name="Name" class="form-control" required aria-label="Your full name" />
             </div>
-            <div class="col-md-6 text-center">
-                <img src="Images/placeholder.jpg" alt="IT image" class="img-fluid rounded shadow" />
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" id="Email" name="Email" class="form-control" required aria-label="Your email address" />
             </div>
-        </div>
+            <div class="mb-3">
+                <label for="Message" class="form-label">Message</label>
+                <textarea id="Message" name="Message" class="form-control" rows="5" required aria-label="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
     </div>
 
     <footer class="footer text-center py-3">

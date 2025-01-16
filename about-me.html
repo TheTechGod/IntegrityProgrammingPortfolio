@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geoff Metzger's Portfolio</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="swag1.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
-        /* Flexbox setup to keep the footer at the bottom */
+        /* Ensure footer stays at the bottom */
         body {
             display: flex;
             flex-direction: column;
@@ -15,13 +15,20 @@
         }
 
         .container {
-            flex: 1; /* Ensures the content grows to push footer to bottom */
+            flex: 1; /* Push footer to the bottom */
         }
 
         .footer {
             background-color: #DFF5E1;
             color: #387C6D;
             border-top: 2px solid #A9D5C3;
+        }
+
+        #selfie {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -42,9 +49,6 @@
                             <a class="nav-link" href="projects.html" style="color: #387C6D;">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-me.html" style="color: #387C6D;">About</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="contact-me.html" style="color: #387C6D;">Contact</a>
                         </li>
                     </ul>
@@ -52,22 +56,26 @@
             </div>
         </nav>
     </header>
-
     <div class="container mt-5">
-        <!-- Hero Section -->
+        <h1 class="mb-4">About Me</h1>
         <div class="row align-items-center">
+            <!-- Text Section -->
             <div class="col-md-6">
-                <div class="container fade-in">
-                    <h1 class="display-4">Hi, I'm Geoff Metzger</h1>
-                    <p class="lead">A developer specializing in <b>.NET</b>, <b>Java</b>, and <b>Python</b></p>
-                </div>
-                <div class="mt-4">
-                    <a href="projects.html" class="btn btn-primary btn-lg">Projects</a>
-                    <a href="contact-me.html" class="btn btn-primary btn-lg">Contact</a>
-                </div>
+                <h2>Hi, I'm Geoff Metzger</h2>
+                <p>
+                    I’m a passionate software developer with experience in .NET, Java, and Python.
+                    My goal is to create innovative and efficient solutions that solve real-world problems.
+                </p>
+                <p>
+                    I specialize in developing web applications, APIs, and tools that enhance user experiences and drive business success.
+                </p>
+                <p>
+                    When I’m not coding, I enjoy learning about new technologies, contributing to open-source projects, and exploring ways to improve my craft.
+                </p>
             </div>
+            <!-- Image Section -->
             <div class="col-md-6 text-center">
-                <img src="Images/placeholder.jpg" alt="IT image" class="img-fluid rounded shadow" />
+                <img src="Images/workselfie.jpg" alt="About Me" id="selfie" class="img-fluid rounded-circle shadow">
             </div>
         </div>
     </div>
